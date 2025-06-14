@@ -63,15 +63,8 @@ const ContactSection = () => {
           </AnimatedButton>
         </div>
         
-        {/* Phone Number Display */}
-        <div className="mt-6 animate-fade-in" style={{ animationDelay: '600ms' }}>
-          <p className="text-lg text-gray-300">
-            {phoneNumber}
-          </p>
-        </div>
-        
         {/* Dots Indicator */}
-        <div className="flex justify-center gap-3 mt-12 animate-fade-in" style={{ animationDelay: '800ms' }}>
+        <div className="flex justify-center gap-3 mt-12 animate-fade-in" style={{ animationDelay: '600ms' }}>
           <div className="w-3 h-3 bg-white/60 rounded-full"></div>
           <div className="w-3 h-3 bg-white/40 rounded-full"></div>
           <div className="w-3 h-3 bg-white/60 rounded-full"></div>
