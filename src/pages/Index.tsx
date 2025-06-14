@@ -4,6 +4,7 @@ import FloatingElements from '@/components/FloatingElements';
 import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
 import ContactSection from '@/components/ContactSection';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <HeroSection />
       <ServicesSection />
       <ContactSection />
+      <WhatsAppFloat />
     </div>
   );
 };

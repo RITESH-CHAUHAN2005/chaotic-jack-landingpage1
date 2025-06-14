@@ -12,6 +12,13 @@ const HeroSection = () => {
       {/* Animated Mesh Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 via-transparent to-purple-500/30 animate-pulse-glow"></div>
       
+      {/* Floating Background Shapes */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full animate-float-slow blur-xl"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full animate-float-delayed blur-xl"></div>
+        <div className="absolute top-1/2 right-1/3 w-40 h-40 bg-gradient-to-r from-pink-400/15 to-blue-400/15 rounded-full animate-float blur-xl"></div>
+      </div>
+      
       {/* Content */}
       <div className="relative z-10 text-center max-w-6xl mx-auto">
         {/* Animated Title */}
@@ -34,9 +41,9 @@ const HeroSection = () => {
           </h2>
         </div>
         
-        {/* Description */}
+        {/* Updated Description */}
         <p className="text-xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '400ms' }}>
-          Get a stunning, mobile-friendly website that brings you more customers with cutting-edge design and technology.
+          Get stunning, responsive websites optimized for both desktop and mobile that bring you more customers with cutting-edge design and modern technology.
         </p>
         
         {/* Animated Laptop Mockup */}
@@ -49,9 +56,9 @@ const HeroSection = () => {
                 <div className="w-3 h-3 bg-green-400 rounded-full"></div>
               </div>
               <div className="mt-8 space-y-3">
-                <div className="h-3 bg-white/30 rounded-full w-3/4"></div>
-                <div className="h-3 bg-white/20 rounded-full w-1/2"></div>
-                <div className="h-3 bg-white/25 rounded-full w-5/6"></div>
+                <div className="h-3 bg-white/30 rounded-full w-3/4 animate-pulse"></div>
+                <div className="h-3 bg-white/20 rounded-full w-1/2 animate-pulse" style={{ animationDelay: '200ms' }}></div>
+                <div className="h-3 bg-white/25 rounded-full w-5/6 animate-pulse" style={{ animationDelay: '400ms' }}></div>
               </div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-white/20 rounded-full animate-pulse"></div>
             </div>

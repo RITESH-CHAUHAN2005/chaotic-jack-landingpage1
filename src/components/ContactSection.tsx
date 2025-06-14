@@ -4,17 +4,31 @@ import { MessageCircle, Phone } from 'lucide-react';
 import AnimatedButton from './AnimatedButton';
 
 const ContactSection = () => {
+  const phoneNumber = "+919818303762";
+  const message = "Hi! I'm interested in your web development services.";
+  
+  const handleWhatsAppClick = () => {
+    const url = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+  
+  const handleCallClick = () => {
+    window.open(`tel:${phoneNumber}`, '_self');
+  };
+
   return (
     <section className="relative py-20 px-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20 animate-pulse-glow"></div>
       
-      {/* Floating Dots */}
+      {/* Floating Animated Shapes */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-1/4 w-2 h-2 bg-white/30 rounded-full animate-float"></div>
         <div className="absolute bottom-32 right-1/4 w-3 h-3 bg-white/20 rounded-full animate-float-delayed"></div>
         <div className="absolute top-1/2 left-10 w-1 h-1 bg-white/40 rounded-full animate-float-slow"></div>
         <div className="absolute bottom-20 right-10 w-2 h-2 bg-white/25 rounded-full animate-float"></div>
+        <div className="absolute top-1/3 right-1/3 w-4 h-4 bg-white/15 rounded-full animate-float-delayed"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-white/20 rounded-full animate-float-slow"></div>
       </div>
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
@@ -33,6 +47,7 @@ const ContactSection = () => {
           <AnimatedButton 
             variant="secondary"
             className="bg-green-500 hover:bg-green-600 border-0 text-lg px-8 py-4"
+            onClick={handleWhatsAppClick}
           >
             <MessageCircle size={20} />
             WhatsApp Us
@@ -41,14 +56,22 @@ const ContactSection = () => {
           <AnimatedButton 
             variant="secondary"
             className="text-lg px-8 py-4"
+            onClick={handleCallClick}
           >
             <Phone size={20} />
             Call Now
           </AnimatedButton>
         </div>
         
+        {/* Phone Number Display */}
+        <div className="mt-6 animate-fade-in" style={{ animationDelay: '600ms' }}>
+          <p className="text-lg text-gray-300">
+            {phoneNumber}
+          </p>
+        </div>
+        
         {/* Dots Indicator */}
-        <div className="flex justify-center gap-3 mt-12 animate-fade-in" style={{ animationDelay: '600ms' }}>
+        <div className="flex justify-center gap-3 mt-12 animate-fade-in" style={{ animationDelay: '800ms' }}>
           <div className="w-3 h-3 bg-white/60 rounded-full"></div>
           <div className="w-3 h-3 bg-white/40 rounded-full"></div>
           <div className="w-3 h-3 bg-white/60 rounded-full"></div>
