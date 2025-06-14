@@ -67,8 +67,8 @@ const HeroSection = () => {
           Get stunning, responsive websites optimized for both desktop and mobile that bring you more customers with cutting-edge design and modern technology.
         </p>
         
-        {/* Enhanced Desktop Dashboard Mockup */}
-        <div className="relative mb-8 sm:mb-12 animate-fade-in px-4" style={{ animationDelay: '600ms' }}>
+        {/* Enhanced Desktop Dashboard Mockup with Professional Data */}
+        <div className="relative mb-16 sm:mb-20 animate-fade-in px-4" style={{ animationDelay: '600ms' }}>
           <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-3 sm:p-4 max-w-4xl mx-auto transform hover:scale-105 transition-transform duration-500 shadow-2xl">
             <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg p-4 sm:p-8 relative overflow-hidden">
               {/* Browser Header */}
@@ -80,66 +80,87 @@ const HeroSection = () => {
               
               {/* Dashboard Content */}
               <div className="mt-6 sm:mt-8 space-y-3 sm:space-y-4">
-                {/* Header with Stats */}
+                {/* Header with Professional Stats */}
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-                  <div className="h-3 sm:h-4 bg-white/40 rounded-full w-1/2 sm:w-1/4 animate-pulse"></div>
+                  <div className="text-white/90 text-sm sm:text-lg font-semibold">Website Analytics Dashboard</div>
                   <div className="flex gap-2 sm:gap-4">
                     <div className="flex items-center gap-1 sm:gap-2 bg-white/20 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
                       <Users size={12} className="text-white/70" />
-                      <span className="text-xs sm:text-sm text-white/80">2.4K</span>
+                      <span className="text-xs sm:text-sm text-white/80">12.8K</span>
                     </div>
                     <div className="flex items-center gap-1 sm:gap-2 bg-white/20 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
                       <TrendingUp size={12} className="text-white/70" />
-                      <span className="text-xs sm:text-sm text-white/80">+24%</span>
+                      <span className="text-xs sm:text-sm text-white/80">+45%</span>
                     </div>
                   </div>
                 </div>
                 
                 {/* Dashboard Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 mt-4 sm:mt-6">
-                  {/* Sales Chart */}
+                  {/* Revenue Chart */}
                   <div className="bg-white/20 rounded-lg p-2 sm:p-3 col-span-1 sm:col-span-2">
                     <div className="flex items-center gap-1 sm:gap-2 mb-2">
                       <TrendingUp size={14} className="text-white/60" />
-                      <div className="h-2 bg-white/30 rounded w-16 sm:w-20"></div>
+                      <div className="text-xs sm:text-sm text-white/70 font-semibold">Monthly Revenue</div>
                     </div>
                     <div className="flex items-end gap-1 h-12 sm:h-16">
-                      <div className="bg-blue-400/60 w-2 sm:w-3 h-8 sm:h-12 rounded-t animate-pulse"></div>
-                      <div className="bg-purple-400/60 w-2 sm:w-3 h-6 sm:h-8 rounded-t animate-pulse" style={{ animationDelay: '200ms' }}></div>
-                      <div className="bg-pink-400/60 w-2 sm:w-3 h-10 sm:h-14 rounded-t animate-pulse" style={{ animationDelay: '400ms' }}></div>
-                      <div className="bg-blue-400/60 w-2 sm:w-3 h-7 sm:h-10 rounded-t animate-pulse" style={{ animationDelay: '600ms' }}></div>
-                      <div className="bg-green-400/60 w-2 sm:w-3 h-12 sm:h-16 rounded-t animate-pulse" style={{ animationDelay: '800ms' }}></div>
-                      <div className="bg-purple-400/60 w-2 sm:w-3 h-9 sm:h-13 rounded-t animate-pulse" style={{ animationDelay: '1000ms' }}></div>
+                      <div className="bg-blue-400/60 w-2 sm:w-3 h-6 sm:h-8 rounded-t animate-pulse flex items-end justify-center">
+                        <span className="text-xs text-white/50 mb-1">45K</span>
+                      </div>
+                      <div className="bg-purple-400/60 w-2 sm:w-3 h-8 sm:h-12 rounded-t animate-pulse" style={{ animationDelay: '200ms' }}>
+                        <span className="text-xs text-white/50">67K</span>
+                      </div>
+                      <div className="bg-pink-400/60 w-2 sm:w-3 h-10 sm:h-14 rounded-t animate-pulse" style={{ animationDelay: '400ms' }}>
+                        <span className="text-xs text-white/50">89K</span>
+                      </div>
+                      <div className="bg-blue-400/60 w-2 sm:w-3 h-7 sm:h-10 rounded-t animate-pulse" style={{ animationDelay: '600ms' }}>
+                        <span className="text-xs text-white/50">78K</span>
+                      </div>
+                      <div className="bg-green-400/60 w-2 sm:w-3 h-12 sm:h-16 rounded-t animate-pulse" style={{ animationDelay: '800ms' }}>
+                        <span className="text-xs text-white/50">125K</span>
+                      </div>
+                      <div className="bg-purple-400/60 w-2 sm:w-3 h-9 sm:h-13 rounded-t animate-pulse" style={{ animationDelay: '1000ms' }}>
+                        <span className="text-xs text-white/50">95K</span>
+                      </div>
                     </div>
                   </div>
                   
-                  {/* Pie Chart */}
+                  {/* Traffic Sources Pie Chart */}
                   <div className="bg-white/20 rounded-lg p-2 sm:p-3">
                     <div className="flex items-center gap-1 sm:gap-2 mb-2">
                       <Globe size={14} className="text-white/60" />
-                      <div className="h-2 bg-white/30 rounded w-12 sm:w-16"></div>
+                      <div className="text-xs sm:text-sm text-white/70 font-semibold">Traffic Sources</div>
                     </div>
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-blue-400/60 via-purple-400/60 to-pink-400/60 animate-spin-slow mx-auto"></div>
+                    <div className="relative">
+                      <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-blue-400/60 via-purple-400/60 to-pink-400/60 animate-spin-slow mx-auto"></div>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="text-xs text-white/80 font-bold">85%</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 
-                {/* Website Performance Metrics */}
+                {/* Professional Website Performance Metrics */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 mt-3 sm:mt-4">
                   <div className="bg-white/15 rounded-lg p-2 text-center">
-                    <div className="text-xs sm:text-sm text-white/60 mb-1">Visitors</div>
-                    <div className="text-sm sm:text-lg font-bold text-white">15.2K</div>
+                    <div className="text-xs sm:text-sm text-white/60 mb-1">Monthly Visitors</div>
+                    <div className="text-sm sm:text-lg font-bold text-white">28.5K</div>
+                    <div className="text-xs text-green-300">+18%</div>
                   </div>
                   <div className="bg-white/15 rounded-lg p-2 text-center">
-                    <div className="text-xs sm:text-sm text-white/60 mb-1">Sales</div>
-                    <div className="text-sm sm:text-lg font-bold text-white">₹2.4L</div>
+                    <div className="text-xs sm:text-sm text-white/60 mb-1">Revenue</div>
+                    <div className="text-sm sm:text-lg font-bold text-white">₹4.2L</div>
+                    <div className="text-xs text-green-300">+32%</div>
                   </div>
                   <div className="bg-white/15 rounded-lg p-2 text-center">
-                    <div className="text-xs sm:text-sm text-white/60 mb-1">Conversion</div>
-                    <div className="text-sm sm:text-lg font-bold text-white">8.2%</div>
+                    <div className="text-xs sm:text-sm text-white/60 mb-1">Conversion Rate</div>
+                    <div className="text-sm sm:text-lg font-bold text-white">12.8%</div>
+                    <div className="text-xs text-green-300">+5.2%</div>
                   </div>
                   <div className="bg-white/15 rounded-lg p-2 text-center">
-                    <div className="text-xs sm:text-sm text-white/60 mb-1">Growth</div>
-                    <div className="text-sm sm:text-lg font-bold text-green-300">+24%</div>
+                    <div className="text-xs sm:text-sm text-white/60 mb-1">Page Speed</div>
+                    <div className="text-sm sm:text-lg font-bold text-green-300">98</div>
+                    <div className="text-xs text-white/60">Score</div>
                   </div>
                 </div>
               </div>
@@ -151,36 +172,36 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Professional Website Features */}
+        {/* Professional Website Features with Hover Animations */}
         <div className="animate-fade-in px-4" style={{ animationDelay: '800ms' }}>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <Monitor size={16} className="sm:w-6 sm:h-6 text-white" />
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 max-w-4xl mx-auto">
+            <div className="text-center group cursor-pointer">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 group-hover:shadow-lg">
+                <Monitor size={20} className="sm:w-8 sm:h-8 text-white animate-float" />
               </div>
-              <h3 className="text-xs sm:text-sm font-semibold text-white mb-1">Responsive Design</h3>
-              <p className="text-xs text-gray-300">Perfect on all devices</p>
+              <h3 className="text-sm sm:text-base font-semibold text-white mb-2 group-hover:text-blue-200 transition-colors">Responsive Design</h3>
+              <p className="text-xs sm:text-sm text-gray-300 group-hover:text-gray-200 transition-colors">Perfect on all devices</p>
             </div>
-            <div className="text-center">
-              <div className="w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <TrendingUp size={16} className="sm:w-6 sm:h-6 text-white" />
+            <div className="text-center group cursor-pointer">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 group-hover:shadow-lg">
+                <TrendingUp size={20} className="sm:w-8 sm:h-8 text-white animate-float-delayed" />
               </div>
-              <h3 className="text-xs sm:text-sm font-semibold text-white mb-1">SEO Optimized</h3>
-              <p className="text-xs text-gray-300">Rank higher on Google</p>
+              <h3 className="text-sm sm:text-base font-semibold text-white mb-2 group-hover:text-purple-200 transition-colors">SEO Optimized</h3>
+              <p className="text-xs sm:text-sm text-gray-300 group-hover:text-gray-200 transition-colors">Rank higher on Google</p>
             </div>
-            <div className="text-center">
-              <div className="w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-r from-pink-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <Zap size={16} className="sm:w-6 sm:h-6 text-white" />
+            <div className="text-center group cursor-pointer">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-pink-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 group-hover:shadow-lg">
+                <Zap size={20} className="sm:w-8 sm:h-8 text-white animate-float-slow" />
               </div>
-              <h3 className="text-xs sm:text-sm font-semibold text-white mb-1">Fast Loading</h3>
-              <p className="text-xs text-gray-300">Lightning speed performance</p>
+              <h3 className="text-sm sm:text-base font-semibold text-white mb-2 group-hover:text-pink-200 transition-colors">Fast Loading</h3>
+              <p className="text-xs sm:text-sm text-gray-300 group-hover:text-gray-200 transition-colors">Lightning speed performance</p>
             </div>
-            <div className="text-center">
-              <div className="w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                <Users size={16} className="sm:w-6 sm:h-6 text-white" />
+            <div className="text-center group cursor-pointer">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 group-hover:shadow-lg">
+                <Users size={20} className="sm:w-8 sm:h-8 text-white animate-float" />
               </div>
-              <h3 className="text-xs sm:text-sm font-semibold text-white mb-1">User Friendly</h3>
-              <p className="text-xs text-gray-300">Easy navigation & UX</p>
+              <h3 className="text-sm sm:text-base font-semibold text-white mb-2 group-hover:text-green-200 transition-colors">User Friendly</h3>
+              <p className="text-xs sm:text-sm text-gray-300 group-hover:text-gray-200 transition-colors">Easy navigation & UX</p>
             </div>
           </div>
         </div>
