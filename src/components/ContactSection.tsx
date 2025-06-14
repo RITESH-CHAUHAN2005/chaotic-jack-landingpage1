@@ -17,7 +17,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="relative py-20 px-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 overflow-hidden">
+    <section className="relative py-16 sm:py-20 px-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20 animate-pulse-glow"></div>
       
@@ -33,20 +33,20 @@ const ContactSection = () => {
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         {/* Title */}
-        <h2 className="text-5xl md:text-6xl font-black text-white mb-6 animate-fade-in">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 animate-fade-in">
           Ready to Start Your Project?
         </h2>
         
         {/* Subtitle */}
-        <p className="text-xl text-gray-200 mb-12 animate-fade-in" style={{ animationDelay: '200ms' }}>
+        <p className="text-lg sm:text-xl text-gray-200 mb-8 sm:mb-12 animate-fade-in px-4" style={{ animationDelay: '200ms' }}>
           Let's create something amazing together. Contact us today!
         </p>
         
         {/* Contact Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in" style={{ animationDelay: '400ms' }}>
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center animate-fade-in px-4" style={{ animationDelay: '400ms' }}>
           <AnimatedButton 
             variant="secondary"
-            className="bg-green-500 hover:bg-green-600 border-0 text-lg px-8 py-4"
+            className="bg-green-500 hover:bg-green-600 border-0 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
             onClick={handleWhatsAppClick}
           >
             <MessageCircle size={20} />
@@ -55,7 +55,7 @@ const ContactSection = () => {
           
           <AnimatedButton 
             variant="secondary"
-            className="text-lg px-8 py-4"
+            className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
             onClick={handleCallClick}
           >
             <Phone size={20} />
@@ -64,7 +64,7 @@ const ContactSection = () => {
         </div>
         
         {/* Dots Indicator */}
-        <div className="flex justify-center gap-3 mt-12 animate-fade-in" style={{ animationDelay: '600ms' }}>
+        <div className="flex justify-center gap-3 mt-8 sm:mt-12 animate-fade-in" style={{ animationDelay: '600ms' }}>
           <div className="w-3 h-3 bg-white/60 rounded-full"></div>
           <div className="w-3 h-3 bg-white/40 rounded-full"></div>
           <div className="w-3 h-3 bg-white/60 rounded-full"></div>

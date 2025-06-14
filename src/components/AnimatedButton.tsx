@@ -11,7 +11,7 @@ interface AnimatedButtonProps {
 }
 
 const AnimatedButton = ({ children, variant = 'primary', className = '', onClick }: AnimatedButtonProps) => {
-  const baseClasses = "group relative overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl";
+  const baseClasses = "group relative overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-semibold";
   
   const primaryClasses = "bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white border-0";
   const secondaryClasses = "bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20";
